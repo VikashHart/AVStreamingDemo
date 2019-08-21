@@ -7,17 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		812D1891230DCCC6001FAC33 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812D1890230DCCC6001FAC33 /* CoordinatorProtocol.swift */; };
+		812D1893230DCCE3001FAC33 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812D1892230DCCE3001FAC33 /* MainCoordinator.swift */; };
 		815EF8CD230DC899001ADBCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815EF8CC230DC899001ADBCE /* AppDelegate.swift */; };
-		815EF8CF230DC899001ADBCE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815EF8CE230DC899001ADBCE /* ViewController.swift */; };
+		815EF8CF230DC899001ADBCE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815EF8CE230DC899001ADBCE /* MainViewController.swift */; };
 		815EF8D2230DC899001ADBCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 815EF8D0230DC899001ADBCE /* Main.storyboard */; };
 		815EF8D4230DC89A001ADBCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 815EF8D3230DC89A001ADBCE /* Assets.xcassets */; };
 		815EF8D7230DC89A001ADBCE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 815EF8D5230DC89A001ADBCE /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		812D1890230DCCC6001FAC33 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
+		812D1892230DCCE3001FAC33 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		815EF8C9230DC899001ADBCE /* AVStreamingDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVStreamingDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		815EF8CC230DC899001ADBCE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		815EF8CE230DC899001ADBCE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		815EF8CE230DC899001ADBCE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		815EF8D1230DC899001ADBCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		815EF8D3230DC89A001ADBCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		815EF8D6230DC89A001ADBCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,6 +39,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		812D188F230DCCA4001FAC33 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				812D1890230DCCC6001FAC33 /* CoordinatorProtocol.swift */,
+				812D1892230DCCE3001FAC33 /* MainCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
 		815EF8C0230DC899001ADBCE = {
 			isa = PBXGroup;
 			children = (
@@ -55,7 +68,8 @@
 			isa = PBXGroup;
 			children = (
 				815EF8CC230DC899001ADBCE /* AppDelegate.swift */,
-				815EF8CE230DC899001ADBCE /* ViewController.swift */,
+				815EF8CE230DC899001ADBCE /* MainViewController.swift */,
+				812D188F230DCCA4001FAC33 /* Coordinator */,
 				815EF8D0230DC899001ADBCE /* Main.storyboard */,
 				815EF8D3230DC89A001ADBCE /* Assets.xcassets */,
 				815EF8D5230DC89A001ADBCE /* LaunchScreen.storyboard */,
@@ -135,8 +149,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				815EF8CF230DC899001ADBCE /* ViewController.swift in Sources */,
+				815EF8CF230DC899001ADBCE /* MainViewController.swift in Sources */,
+				812D1893230DCCE3001FAC33 /* MainCoordinator.swift in Sources */,
 				815EF8CD230DC899001ADBCE /* AppDelegate.swift in Sources */,
+				812D1891230DCCC6001FAC33 /* CoordinatorProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
