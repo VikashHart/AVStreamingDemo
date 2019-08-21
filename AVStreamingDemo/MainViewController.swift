@@ -1,6 +1,8 @@
 import UIKit
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
+
+    weak var coordinator: MainCoordinator?
 
     override func viewDidLoad() {
         super.viewDidLoad()
