@@ -2,17 +2,22 @@ import UIKit
 
 class MainView: UIView {
 
-    lazy var headerView: UIView = {
-        let view = UIView()
-        view.backgroundColor = .orange
+   lazy var headerView: GradientView = {
+        let view = GradientView()
+        view.gradientLayer?.startPoint = CGPoint(x: 0, y: 0)
+        view.gradientLayer?.endPoint = CGPoint(x: 1, y: 1)
+        view.gradientLayer?.colors = CGColor.oranges
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
 
+    let font = "GillSans-BoldItalic"
+
+
     lazy var headerLabel: UILabel = {
         let label = UILabel()
-        label.text = "MyTube"
-        label.font = UIFont.systemFont(ofSize: 35, weight: .bold)
+        label.text = "StreamTube"
+        label.font = UIFont(name: font, size: 40)
         label.textAlignment = .center
         label.textColor = .white
         label.backgroundColor = .clear
@@ -28,7 +33,7 @@ class MainView: UIView {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
         let collectionView = UICollectionView(frame: frame, collectionViewLayout: layout)
-        collectionView.backgroundColor = UIColor.black
+        collectionView.backgroundColor = UIColor.lightBlack
         collectionView.register(SourceCell.self, forCellWithReuseIdentifier: cell)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         return collectionView
@@ -60,7 +65,7 @@ class MainView: UIView {
             headerView.topAnchor.constraint(equalTo: topAnchor),
             headerView.leadingAnchor.constraint(equalTo: leadingAnchor),
             headerView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            headerView.heightAnchor.constraint(equalToConstant: 44)
+            headerView.heightAnchor.constraint(equalToConstant: 48)
             ])
     }
 

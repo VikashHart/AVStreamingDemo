@@ -6,6 +6,10 @@ class MainViewController: UIViewController {
     private let mainView = MainView()
     private let viewModel = MainVCViewModel()
 
+    override var preferredStatusBarStyle : UIStatusBarStyle {
+        return UIStatusBarStyle.lightContent
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         configureView()
@@ -13,11 +17,12 @@ class MainViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
+        AppUtility.lockOrientation(.portrait)
         super.viewWillAppear(animated)
     }
 
     private func configureView() {
-        view.backgroundColor = .black
+        view.backgroundColor = .lightBlack
         mainView.collectionView.delegate = self
         mainView.collectionView.dataSource = self
         setupConstraints()
@@ -28,8 +33,8 @@ class MainViewController: UIViewController {
         mainView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             mainView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-            mainView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            mainView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            mainView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+            mainView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
             mainView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
             ])
     }
@@ -38,7 +43,8 @@ class MainViewController: UIViewController {
 extension MainViewController: UICollectionViewDelegate {
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-
+        guard let url = URL(string: viewModel.sources[indexPath.row].url) else { return }
+        coordinator?.videoPlayerVC(videoUrl: url)
     }
 }
 
