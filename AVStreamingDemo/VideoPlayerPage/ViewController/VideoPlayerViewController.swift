@@ -11,13 +11,8 @@ class VideoPlayerViewController: AVPlayerViewController {
     }
 
     override func viewWillAppear(_ animated: Bool) {
-        AppUtility.lockOrientation(.landscape)
+        AppUtility.lockOrientation(.landscape, andRotateTo: .landscapeRight)
         super.viewWillAppear(animated)
-    }
-
-    override func viewWillDisappear(_ animated: Bool) {
-        AppUtility.lockOrientation(.portrait)
-        super.viewWillDisappear(animated)
     }
 
     @objc func screenEdgeSwipedLeft(_ recognizer: UIScreenEdgePanGestureRecognizer) {

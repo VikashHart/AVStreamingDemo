@@ -17,7 +17,7 @@ class MainViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
-        AppUtility.lockOrientation(.portrait)
+        AppUtility.lockOrientation(.portrait, andRotateTo: .portrait)
         super.viewWillAppear(animated)
     }
 
