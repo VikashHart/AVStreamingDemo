@@ -11,10 +11,14 @@
 		812D1893230DCCE3001FAC33 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812D1892230DCCE3001FAC33 /* MainCoordinator.swift */; };
 		812D1899230DE62E001FAC33 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812D1898230DE62E001FAC33 /* MainView.swift */; };
 		812D189B230DEDB9001FAC33 /* SourceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812D189A230DEDB9001FAC33 /* SourceCell.swift */; };
-		812D189F230DF446001FAC33 /* UIImage+ThumbnailGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812D189E230DF446001FAC33 /* UIImage+ThumbnailGenerator.swift */; };
 		812D18A2230DF81E001FAC33 /* SourceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812D18A1230DF81E001FAC33 /* SourceModel.swift */; };
 		812D18A5230DF8A1001FAC33 /* Sources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812D18A4230DF8A1001FAC33 /* Sources.swift */; };
 		812D18A7230E0D56001FAC33 /* MainVCViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812D18A6230E0D56001FAC33 /* MainVCViewModel.swift */; };
+		812D18AA230E227A001FAC33 /* AVPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812D18A9230E227A001FAC33 /* AVPlayerView.swift */; };
+		812D18AE230F2C51001FAC33 /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812D18AD230F2C51001FAC33 /* VideoPlayerViewController.swift */; };
+		812D18B5230F61EE001FAC33 /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812D18B4230F61EE001FAC33 /* AppUtility.swift */; };
+		812D18B8230F6BAB001FAC33 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812D18B7230F6BAB001FAC33 /* GradientView.swift */; };
+		812D18BB230F6CE2001FAC33 /* cgColor+UIColorHexConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812D18BA230F6CE2001FAC33 /* cgColor+UIColorHexConverter.swift */; };
 		815EF8CD230DC899001ADBCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815EF8CC230DC899001ADBCE /* AppDelegate.swift */; };
 		815EF8CF230DC899001ADBCE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815EF8CE230DC899001ADBCE /* MainViewController.swift */; };
 		815EF8D2230DC899001ADBCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 815EF8D0230DC899001ADBCE /* Main.storyboard */; };
@@ -27,10 +31,14 @@
 		812D1892230DCCE3001FAC33 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		812D1898230DE62E001FAC33 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		812D189A230DEDB9001FAC33 /* SourceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceCell.swift; sourceTree = "<group>"; };
-		812D189E230DF446001FAC33 /* UIImage+ThumbnailGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+ThumbnailGenerator.swift"; sourceTree = "<group>"; };
 		812D18A1230DF81E001FAC33 /* SourceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceModel.swift; sourceTree = "<group>"; };
 		812D18A4230DF8A1001FAC33 /* Sources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources.swift; sourceTree = "<group>"; };
 		812D18A6230E0D56001FAC33 /* MainVCViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVCViewModel.swift; sourceTree = "<group>"; };
+		812D18A9230E227A001FAC33 /* AVPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayerView.swift; sourceTree = "<group>"; };
+		812D18AD230F2C51001FAC33 /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
+		812D18B4230F61EE001FAC33 /* AppUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtility.swift; sourceTree = "<group>"; };
+		812D18B7230F6BAB001FAC33 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		812D18BA230F6CE2001FAC33 /* cgColor+UIColorHexConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "cgColor+UIColorHexConverter.swift"; sourceTree = "<group>"; };
 		815EF8C9230DC899001ADBCE /* AVStreamingDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVStreamingDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		815EF8CC230DC899001ADBCE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		815EF8CE230DC899001ADBCE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +106,9 @@
 		812D189C230DF3F9001FAC33 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				812D18B6230F6B7F001FAC33 /* Gradient */,
+				812D18B3230F61B6001FAC33 /* UIInterfaceOrientationLock */,
+				812D18A8230E2251001FAC33 /* AV Player View */,
 				812D18A3230DF875001FAC33 /* Sources */,
 				812D189D230DF41C001FAC33 /* Extensions */,
 				812D188F230DCCA4001FAC33 /* Coordinator */,
@@ -108,7 +119,7 @@
 		812D189D230DF41C001FAC33 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				812D189E230DF446001FAC33 /* UIImage+ThumbnailGenerator.swift */,
+				812D18B9230F6C22001FAC33 /* UIColor+cgColor */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -120,6 +131,54 @@
 				812D18A4230DF8A1001FAC33 /* Sources.swift */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		812D18A8230E2251001FAC33 /* AV Player View */ = {
+			isa = PBXGroup;
+			children = (
+				812D18A9230E227A001FAC33 /* AVPlayerView.swift */,
+			);
+			path = "AV Player View";
+			sourceTree = "<group>";
+		};
+		812D18AB230F2B76001FAC33 /* VideoPlayerPage */ = {
+			isa = PBXGroup;
+			children = (
+				812D18AC230F2B9E001FAC33 /* ViewController */,
+			);
+			path = VideoPlayerPage;
+			sourceTree = "<group>";
+		};
+		812D18AC230F2B9E001FAC33 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				812D18AD230F2C51001FAC33 /* VideoPlayerViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		812D18B3230F61B6001FAC33 /* UIInterfaceOrientationLock */ = {
+			isa = PBXGroup;
+			children = (
+				812D18B4230F61EE001FAC33 /* AppUtility.swift */,
+			);
+			path = UIInterfaceOrientationLock;
+			sourceTree = "<group>";
+		};
+		812D18B6230F6B7F001FAC33 /* Gradient */ = {
+			isa = PBXGroup;
+			children = (
+				812D18B7230F6BAB001FAC33 /* GradientView.swift */,
+			);
+			path = Gradient;
+			sourceTree = "<group>";
+		};
+		812D18B9230F6C22001FAC33 /* UIColor+cgColor */ = {
+			isa = PBXGroup;
+			children = (
+				812D18BA230F6CE2001FAC33 /* cgColor+UIColorHexConverter.swift */,
+			);
+			path = "UIColor+cgColor";
 			sourceTree = "<group>";
 		};
 		815EF8C0230DC899001ADBCE = {
@@ -143,6 +202,7 @@
 			children = (
 				815EF8CC230DC899001ADBCE /* AppDelegate.swift */,
 				812D1894230DE3F1001FAC33 /* MainPage */,
+				812D18AB230F2B76001FAC33 /* VideoPlayerPage */,
 				812D189C230DF3F9001FAC33 /* Components */,
 				815EF8D0230DC899001ADBCE /* Main.storyboard */,
 				815EF8D3230DC89A001ADBCE /* Assets.xcassets */,
@@ -223,14 +283,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				812D18AA230E227A001FAC33 /* AVPlayerView.swift in Sources */,
 				812D18A5230DF8A1001FAC33 /* Sources.swift in Sources */,
 				815EF8CF230DC899001ADBCE /* MainViewController.swift in Sources */,
 				812D1893230DCCE3001FAC33 /* MainCoordinator.swift in Sources */,
-				812D189F230DF446001FAC33 /* UIImage+ThumbnailGenerator.swift in Sources */,
+				812D18B8230F6BAB001FAC33 /* GradientView.swift in Sources */,
+				812D18B5230F61EE001FAC33 /* AppUtility.swift in Sources */,
+				812D18BB230F6CE2001FAC33 /* cgColor+UIColorHexConverter.swift in Sources */,
 				815EF8CD230DC899001ADBCE /* AppDelegate.swift in Sources */,
 				812D1899230DE62E001FAC33 /* MainView.swift in Sources */,
 				812D189B230DEDB9001FAC33 /* SourceCell.swift in Sources */,
 				812D18A2230DF81E001FAC33 /* SourceModel.swift in Sources */,
+				812D18AE230F2C51001FAC33 /* VideoPlayerViewController.swift in Sources */,
 				812D18A7230E0D56001FAC33 /* MainVCViewModel.swift in Sources */,
 				812D1891230DCCC6001FAC33 /* CoordinatorProtocol.swift in Sources */,
 			);
