@@ -6,13 +6,26 @@ class VideoPlayerViewController: AVPlayerViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.player?.play()
-        configureGestures()
+        configureView()
     }
 
     override func viewWillAppear(_ animated: Bool) {
         AppUtility.lockOrientation(.landscape, andRotateTo: .landscapeRight)
+        do {
+            try AVAudioSession.sharedInstance().setActive(false,
+                                                          options: .notifyOthersOnDeactivation)
+        } catch let error as NSError {
+            print("Failed to deactivate audio session: \(error.localizedDescription)")
+        }
         super.viewWillAppear(animated)
+    }
+
+    private func configureView() {
+        self.player?.play()
+        configureGestures()
+        try? AVAudioSession.sharedInstance().setCategory(.playback,
+                                                         mode: .moviePlayback,
+                                                         options: [.defaultToSpeaker, .interruptSpokenAudioAndMixWithOthers])
     }
 
     @objc func screenEdgeSwipedLeft(_ recognizer: UIScreenEdgePanGestureRecognizer) {
